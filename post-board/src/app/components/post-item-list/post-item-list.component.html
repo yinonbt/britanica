@@ -1,3 +1,2 @@
-<div *ngFor="let postItem of postItems$ | async">
-  {{postItem.title}}
-</div>
+<app-post-item *ngFor="let postItem of postItems$ | async" [postItem]="postItem">
+</app-post-item>
